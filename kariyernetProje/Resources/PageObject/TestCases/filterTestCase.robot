@@ -11,6 +11,7 @@ kariyernet filter created
     filterKeywords.click the city
     filterKeywords.selected the city
     filterKeywords.click the district
+    sleep    2 second
     filterKeywords.selected the district
     filterKeywords.selected date
     filterKeywords.click the apply button
@@ -18,6 +19,7 @@ kariyernet filter created
     filterKeywords.get all filter count
     filterKeywords.filter remove
     filterKeywords.search filter fetch
+    sleep    2 second
     filterKeywords.check advert count comparsion
     filterKeywords.get close filter count
     filterKeywords.check filter count comparsion
