@@ -6,17 +6,17 @@ Resource    Utils/utils.robot
 
 *** Variables ***
 ${URL}    https://www.kariyer.net/is-ilanlari
-${COUNTRY_DROPDOWN}    css:[data-test='country-title']
+${COUNTRY_DROPDOWN}    id:__BVID__42__BV_toggle_
 ${SELECTED_COUNTRY_TURKEY}    id:10
 ${CITY_DROPDOWN}    css:[data-test='city-title']
-${SELECTED_CITY_IZMIR}    css:label[for="__BVID__60"]
-${SELECTED_CITY_ANKARA}    css:label[for="__BVID__58"]
-${SELECTED_CITY_ISTANBUL_AVR}    css:label[for="__BVID__54"]
+${SELECTED_CITY_IZMIR}    css:label[for="__BVID__62"]
+${SELECTED_CITY_ANKARA}    css:label[for="__BVID__60"]
+${SELECTED_CITY_ISTANBUL_AVR}    css:label[for="__BVID__56"]
 ${SELECTED_CITY_CLOSE_BUTTON}    css:[data-test='close-icon']
 ${DISTRICT_DROPDOWN}    css:[data-test='districtModal']
-${SELECTED_DISTICT_ALIAGA}    css: div #__BVID__219___BV_modal_body_ > div > div > div
-${SELECTED_DISTICT_CLOSE_BUTTON}    css: div #__BVID__219___BV_modal_content_ > header > div > span
-${SELECTED_DATE_15}    css: div #__BVID__228 > div > div > div > div > div:nth-of-type(7)
+${SELECTED_DISTICT_ALIAGA}    css: div #__BVID__221___BV_modal_content_ > div > div:nth-of-type(2) > div
+${SELECTED_DISTICT_CLOSE_BUTTON}    css: div #__BVID__221___BV_modal_content_ > header > div > span
+${SELECTED_DATE_15}    css: div #__BVID__233 > div:nth-of-type(7) >label
 ${APPLY_BUTTON}    css:[data-test='apply-button']
 ${LIGHTBOX_CLOSE_BUTTON}    id:img_lightbox_close
 ${ADVERT}    css:div[class="t-6 text-secondary mb-3 search-result-section"]
@@ -53,6 +53,7 @@ selected the district
     utils.click    ${SELECTED_DISTICT_ALIAGA}
     utils.click    ${SELECTED_DISTICT_CLOSE_BUTTON}
 selected date
+    utils.scroll
     utils.click    ${SELECTED_DATE_15}
 
 click the apply button
