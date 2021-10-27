@@ -15,7 +15,7 @@ click
     click element   ${LOCATER}
 
 scroll
-    Execute JavaScript    window.scrollTo(0,1000)
+    Execute JavaScript    window.scrollTo(0,500)
 
 close session
     close browser
